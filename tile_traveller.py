@@ -80,7 +80,7 @@ while y_axis in range (0,4):
 
 print('Victory!')
     
-
+# Ísak Gibran Júlíusson var með mér í þessu verkefni en gat ekki skilað vegna þess að það var lokað fyrir assignmentið hans á undan því hann er í öðrum hóp
 
 
 
