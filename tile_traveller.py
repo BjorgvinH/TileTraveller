@@ -25,7 +25,7 @@ def travel(x,y):
     S = ''
     W = ''
     E = ''
-    if y < 3 and x != 2:
+    if y == 1:
          N='(N)orth'
          return(N)     
     elif y > 1:
@@ -58,14 +58,23 @@ change_in_direction = 0
 
 while y_axis in range (0,4):
     position = travel (x_axis, y_axis)
-    print('you can travel:',position)
     move = input('Direction:')
-    if move == 'N' or move == 'S':
+    if move == 'N' or move == 'S' and y_axis < 3 and y_axis > 1:
         change_in_direction = movement_y(move)
         y_axis += change_in_direction
-    elif move == 'W' or move == 'E':
+        print('you can travel:',position)
+    elif move == 'W' or move == 'E' and x_axis > 1 and x_axis < 3:
         change_in_direction = movement_x(move)
         x_axis += change_in_direction
+        print('you can travel:',position)
+    elif move == 'N' and y_axis==3:
+        print('Invalid input!')
+    elif move == 'S' and y_axis == 1:
+        print('Invalid input!')
+    elif move == 'W' and x_axis == 1:
+        print('Invalid input!')
+    elif move == 'E' and x_axis == 3:
+        print('Invalid input')
     if x_axis == 3 and y_axis == 1:
         break
 
