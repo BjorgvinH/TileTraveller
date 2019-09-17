@@ -26,3 +26,5 @@ direction = input ('You can travel: ')
 
 
 
+
+
