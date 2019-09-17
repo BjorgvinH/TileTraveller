@@ -6,6 +6,10 @@ def movement (x,y):
 
 
 
+input=input('You can travel: ')
+
+while 
+
 
 
     
