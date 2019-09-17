@@ -15,12 +15,30 @@ def movement (direction):
         x_movement = 1
     return (x_movement,y_movement)
 
+def travel(x,y):
+    N = ''
+    S = ''
+    W = ''
+    E = ''
+     if y < 3 and x != 2:
+         N='(N)orth'     
+    elif y > 1:
+        if y == 3 and x ==2:
+            E = '(E)ast'
+            W = '(W)est'
+        S = '(S)outh'
+    elif x==2 and y==2:
+        S='(S)outh'
+        W='(W)est'
+    elif x==2 and y==2
+        N='(N)orth'
+        S='(S)outh'
+        E='(E)ast'    
+
 #playing field   
 x_ás= 1
 y_ás = 1
 
-
-direction = input ('You can travel: ')
 
 
 
